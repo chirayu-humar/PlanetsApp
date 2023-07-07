@@ -5,8 +5,12 @@ const PlanetItem = props => {
   const {details} = props
   return (
     <div>
-      <p>{details.name}</p>
-      <img className="image" src={details.imageUrl} />
+      <h1>{details.name}</h1>
+      <img
+        alt={`planet ${details.name}`}
+        className="image"
+        src={details.imageUrl}
+      />
       <p>{details.description}</p>
     </div>
   )

@@ -13,7 +13,7 @@ const PlanetsSlider = props => {
   return (
     <div className="PlanetsOuter">
       <h1>PLANETS</h1>
-      <Slider {...settings}>
+      <Slider data-testid="planets">
         {planetsList.map(eachItem => (
           <PlanetItem details={eachItem} />
         ))}
